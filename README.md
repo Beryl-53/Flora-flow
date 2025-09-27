@@ -2,9 +2,10 @@
 
 A vibrant, multi-page website to help users monitor their menstrual cycles ,track smptoms and retrieve personalied insights.
 
-[Add your deployed URL here]
+[https://meek-scone-28cfd2.netlify.app/]
 
 ## Pages
+
 - Home (`home.html`)
 - About (`about.html`)
 - Tracker (`tracker.html`)
@@ -17,9 +18,8 @@ A vibrant, multi-page website to help users monitor their menstrual cycles ,trac
 - Settings (`settings.html`)
 - Community (`community.html`)
 
-
 ## Features
-- Responsive design-
+
 - Interactive period tracker
 - Contact form
 - Vibrant, welcoming style
@@ -28,7 +28,7 @@ A vibrant, multi-page website to help users monitor their menstrual cycles ,trac
 - Cycle tracking
 
 ## Structure
-```
+
 /css/style.css
 /js/main.js
 /js/marketplace.js
@@ -47,20 +47,19 @@ home.html
 information.html
 marketplace.html
 settings.html
-```
+
 ## Usage examples
+
 - Tracking cycles
 - Recording symptoms
 - Receiving insights
 
-# Contact information
-- For questions or feedback ,please contact: 
-Beryl:
-
 ## Future plans
+
 - Integrate with wearable devices
 - Enhance AI powered predictions
 - Integrate multi-language support
 
 ## Credits
+
 Created for the final assignment.
