@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FloraFlow Community - Share & Connect</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">🌸 FloraFlow</div>
+      <ul>
+        <li><a href="index.html">Welcome</a></li>
+        <li><a href="tracker.html">Tracker</a></li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="community.html" class="active">Community</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="marketplace.html">Marketplace</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="community-hero">
+      <h1>💬 FloraFlow Community</h1>
+      <p>Share your experiences, ask questions, and connect with others in a safe, supportive space.</p>
+    </section>
+    <section class="forum">
+      <div class="forum-post-form">
+        <h2>Start a Conversation</h2>
+        <form id="postForm">
+          <input type="text" id="username" placeholder="Your name or nickname" maxlength="20" required>
+          <textarea id="postContent" placeholder="Share your story, question, or tip..." rows="4" maxlength="300" required></textarea>
+          <button type="submit" class="cta-btn">Post</button>
+        </form>
+      </div>
+      <div class="forum-posts">
+        <h2>Recent Posts</h2>
+        <ul id="postsList"></ul>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 FloraFlow. Empowering Women Everywhere.</p>
+  </footer>
+  <script src="js/community.js"></script>
+</body>
+</html>
+      

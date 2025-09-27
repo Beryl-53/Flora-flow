@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Symptom & Mood Tracking - FloraFlow</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Welcome</a>
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="tracker.html" class="active">Tracker</a>
+      <a href="resources.html">Resources</a>
+      <a href="information.html">Guidelines</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <h1 style="font-size:2.2em; color:#ff6f91; text-align:center; margin-bottom:0.5em;">
+      📊 Symptom & Mood Tracking <span style="font-size:1.2em;">✨</span>
+    </h1>
+    <br>
+    <p style="text-align:center; font-size:1.1em; color:#a259c6; margin-bottom:1.5em;">
+      Track your daily symptoms and moods to spot patterns and correlations with your cycle. This helps you understand your body and manage your wellness better.
+    </p>
+    <br>
+    <div id="tracker-card"
+      style="max-width:400px;margin:0 auto;background:linear-gradient(135deg,#fff6f6 0%,#f3e8ff 100%);box-shadow:0 4px 24px rgba(162,89,198,0.12);border-radius:18px;padding:2em 1.5em;opacity:0;transform:translateY(40px);">
+      <form id="tracker-form">
+        <label for="start-date" style="font-weight:bold;">🗓️ Last Period Start Date:</label>
+        <br>
+        <input type="date" id="start-date" name="start-date" required>
+        <br><br>
+        <label for="cycle-length" style="font-weight:bold;">🔄 Average Cycle Length (days):</label>
+        <br>
+        <input type="number" id="cycle-length" name="cycle-length" min="21" max="35" value="28" required>
+        <br><br>
+        <button id="track-btn" type="submit"
+          style="background:#ff6f91;color:#fff;font-weight:bold;box-shadow:0 2px 8px #a259c6;">
+          Track <span style="font-size:1.2em;">🎉</span>
+        </button>
+      </form>
+      <br>
+      <div id="tracker-result" style="margin-top:1.5em;"></div>
+      <div id="confetti-container" style="position:relative;z-index:2;"></div>
+      <br>
+      <div style="margin-top:2em;text-align:center;color:#a259c6;font-size:1em;">
+        <em>"Every cycle is a sign of your amazing strength!"</em> 🌟
+      </div>
+    </div>
+    <br>
+    <section id="symptom-tracker">
+      <h2>Log Today's Symptoms</h2>
+      <form id="symptomForm">
+        <label><input type="checkbox" name="symptom" value="Cramps"> Cramps</label>
+        <label><input type="checkbox" name="symptom" value="Bloating"> Bloating</label>
+        <label><input type="checkbox" name="symptom" value="Headache"> Headache</label>
+        <label><input type="checkbox" name="symptom" value="Mood Swings"> Mood Swings</label>
+        <label><input type="checkbox" name="symptom" value="Fatigue"> Fatigue</label>
+        <br>
+        <label for="mood">Mood:</label>
+        <select id="mood" name="mood">
+          <option value="Happy">Happy</option>
+          <option value="Sad">Sad</option>
+          <option value="Anxious">Anxious</option>
+          <option value="Irritable">Irritable</option>
+          <option value="Energetic">Energetic</option>
+        </select>
+        <br><br>
+        <button type="submit" class="cta-btn">Log Symptoms & Mood</button>
+      </form>
+      <div id="symptomHistory"></div>
+    </section>
+    <section id="mood-patterns">
+      <h2>Mood Patterns & Insights</h2>
+      <p>
+        View your mood history and see how it correlates with your cycle. Regular tracking can help you anticipate changes and take proactive steps for self-care.
+      </p>
+      <!-- You can add charts or summaries here -->
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 FloraFlow. Empowering Women Everywhere.</p>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/tracker.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FloraFlow Settings - Personalize Your Experience</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">🌸 FloraFlow</div>
+      <ul>
+        <li><a href="index.html">Welcome</a></li>
+        <a href="home.html">Home</a>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="tracker.html">Tracker</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="marketplace.html">Marketplace</a></li>
+        <li><a href="information.html">Guidelines</a></li>
+        <li><a href="settings.html" class="active">Settings</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="settings-hero">
+      <h1>⚙️ Settings</h1>
+      <p>Personalize your FloraFlow experience. Choose your theme, set reminders, and manage your preferences.</p>
+    </section>
+    <section class="settings-content">
+      <form id="themeForm" class="settings-card">
+        <h2>Theme</h2>
+        <label>
+          <input type="radio" name="theme" value="default" checked> Default Pastel
+        </label>
+        <label>
+          <input type="radio" name="theme" value="dark"> Dark Mode
+        </label>
+        <label>
+          <input type="radio" name="theme" value="sunny"> Sunny Yellow
+        </label>
+        <button type="submit" class="cta-btn">Apply Theme</button>
+      </form>
+      <form id="reminderForm" class="settings-card">
+        <h2>Reminders</h2>
+        <label for="reminderType">Type:</label>
+        <select id="reminderType">
+          <option value="period">Period</option>
+          <option value="medication">Medication</option>
+          <option value="appointment">Appointment</option>
+          <option value="selfcare">Self Care</option>
+        </select>
+        <label for="reminderDate">Date & Time:</label>
+        <input type="datetime-local" id="reminderDate" required>
+        <button type="submit" class="cta-btn">Set Reminder</button>
+      </form>
+      <div id="reminderList" class="settings-card">
+        <h2>Your Reminders</h2>
+        <ul id="reminders"></ul>
+      </div>
+      <form id="privacyForm" class="settings-card">
+        <h2>Privacy & Notifications</h2>
+        <label>
+          <input type="checkbox" id="emailNotifications"> Email notifications
+        </label>
+        <label>
+          <input type="checkbox" id="pushNotifications"> Push notifications
+        </label>
+        <label>
+          <input type="checkbox" id="anonymousMode"> Anonymous mode (hide your name in community)
+        </label>
+        <button type="submit" class="cta-btn">Save Preferences</button>
+      </form>
+      <form id="accountForm" class="settings-card">
+        <h2>Account</h2>
+        <label for="displayName">Display Name:</label>
+        <input type="text" id="displayName" maxlength="20" placeholder="Your name or nickname">
+        <label for="email">Email:</label>
+        <input type="email" id="email" maxlength="40" placeholder="Your email">
+        <button type="submit" class="cta-btn">Update Account</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 FloraFlow. Empowering Women Everywhere.</p>
+  </footer>
+  <script src="js/settings.js"></script>
+</body>
+</html>

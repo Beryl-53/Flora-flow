@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FloraFlow Marketplace - Shop & Donate</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">🌸 FloraFlow</div>
+      <ul>
+        <li><a href="index.html">Welcome</a></li>
+
+        <li><a href="home.html">Home</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="tracker.html">Tracker</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="marketplace.html" class="active">Marketplace</a></li>
+        <li><a href="information.html">Guidelines</a></li>
+        <li><a href="settings.html">Settings</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="marketplace-hero">
+      <h1>🛒 Marketplace</h1>
+      <p>Order sanitary towels, wellness products, or donate to women and girls in need.</p>
+    </section>
+    <section class="marketplace-products">
+      <div class="marketplace-card">
+        <img src="images/sanitary-towel.png" alt="Sanitary Towels" class="marketplace-img">
+        <h2>Sanitary Towels</h2>
+        <p>Comfortable, reliable, and affordable. Support yourself and others!</p>
+        <button class="cta-btn" onclick="addToCart('Sanitary Towels')">Add to Cart</button>
+        <button class="donate-btn" onclick="donateProduct('Sanitary Towels')">Donate</button>
+      </div>
+      <div class="marketplace-card">
+        <img src="images/health-kit.png" alt="Health Kit" class="marketplace-img">
+        <h2>Health Kit</h2>
+        <p>Includes wipes, pain relief, and self-care essentials.</p>
+        <button class="cta-btn" onclick="addToCart('Health Kit')">Add to Cart</button>
+        <button class="donate-btn" onclick="donateProduct('Health Kit')">Donate</button>
+      </div>
+      <div class="marketplace-card">
+        <img src="images/period-cup.png" alt="Period Cup" class="marketplace-img">
+        <h2>Period Cup</h2>
+        <p>Eco-friendly, reusable, and safe for all cycles.</p>
+        <button class="cta-btn" onclick="addToCart('Period Cup')">Add to Cart</button>
+        <button class="donate-btn" onclick="donateProduct('Period Cup')">Donate</button>
+      </div>
+    </section>
+    <section class="marketplace-cart">
+      <h2>Your Cart</h2>
+      <ul id="cartList"></ul>
+      <button class="cta-btn" onclick="checkoutCart()">Checkout</button>
+    </section>
+    <section class="marketplace-donations">
+      <h2>Your Donations</h2>
+      <ul id="donationList"></ul>
+      <button class="cta-btn" onclick="checkoutDonations()">Donate Now</button>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 FloraFlow. Empowering Women Everywhere.</p>
+  </footer>
+  <script src="js/marketplace.js"></script>
+</body>
+</html>

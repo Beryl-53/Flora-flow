@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FloraFlow Home - Welcome</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">🌸 FloraFlow</div>
+      <ul>
+        <li><a href="home.html" class="active">Home</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="index.html">Welcome</a></li>
+        <li><a href="tracker.html">Tracker</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="marketplace.html">Marketplace</a></li>
+        <li><a href="information.html">Guidelines</a></li>
+        <li><a href="settings.html">Settings</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero animate-hero">
+      <div class="hero-bg">
+        <img src="images/vibrant-girly-flowers-fresh.jpg" alt="Pastel floral illustration" class="hero-img-bg">
+      </div>
+      <div class="hero-content">
+        <h1>Welcome to FloraFlow</h1>
+        <p>
+          FloraFlow empowers women to take control of their menstrual health.<br>
+          Track your cycle, symptoms, and moods, connect with a supportive community, and access resources for wellness and self-care.
+        </p>
+        <a href="tracker.html" class="cta-btn">Start Tracking</a>
+      </div>
+    </section>
+    <section class="quick-links">
+      <h2>Quick Links</h2>
+      <div class="quick-links-list">
+        <a href="dashboard.html" class="quick-link-card">📊 Dashboard</a>
+        <a href="community.html" class="quick-link-card">💬 Community</a>
+        <a href="resources.html" class="quick-link-card">📚 Resources</a>
+        <a href="marketplace.html" class="quick-link-card">🛒 Marketplace</a>
+        <a href="settings.html" class="quick-link-card">⚙️ Settings</a>
+      </div>
+    </section>
+    <section class="home-tips">
+      <h2>Today's Wellness Tip</h2>
+      <div class="tip-card" id="wellnessTip"></div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 FloraFlow. Empowering Women Everywhere.</p>
+  </footer>
+  <script>
+    // Simple daily tip rotation
+    const tips = [
+      "Stay hydrated and eat nourishing foods for a balanced cycle.",
+      "Gentle exercise like yoga can help ease cramps and boost your mood.",
+      "Track your symptoms to spot patterns and improve your wellness.",
+      "Connect with others in the community for support and advice.",
+      "Remember to take time for self-care and relaxation."
+    ];
+    document.getElementById('wellnessTip').textContent = tips[new Date().getDate() % tips.length];
+  </script>
+</body>
+</html>

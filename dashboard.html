@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cycle Dashboard - FloraFlow</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <!-- Add your navigation links here -->
+    </nav>
+  </header>
+  <main>
+    <h1 style="text-align:center; color:#d81b60;">📊 My Cycle Dashboard</h1>
+    <div class="dashboard-buttons" style="display:flex; flex-wrap:wrap; gap:1em; justify-content:center; margin:2em 0;">
+      <button class="dashboard-btn" onclick="showSection('cycle-summary')">Cycle Summary</button>
+      <button class="dashboard-btn" onclick="showSection('symptom-trends')">Symptom Trends</button>
+      <button class="dashboard-btn" onclick="showSection('mood-patterns')">Mood Patterns</button>
+      <button class="dashboard-btn" onclick="showSection('predictions')">Personalized Predictions</button>
+      <button class="dashboard-btn" onclick="showSection('cycle-history')">Your Cycle History</button>
+    </div>
+    <section class="dashboard-card" id="cycle-summary" style="display:none;">
+      <h2>Cycle Summary</h2>
+      <div id="cycleSummary"></div>
+    </section>
+    <section class="dashboard-card" id="symptom-trends" style="display:none;">
+      <h2>Symptom Trends</h2>
+      <div id="symptomTrends"></div>
+    </section>
+    <section class="dashboard-card" id="mood-patterns" style="display:none;">
+      <h2>Mood Patterns</h2>
+      <div id="moodPatterns"></div>
+    </section>
+    <section class="dashboard-card" id="predictions" style="display:none;">
+      <h2>Personalized Predictions</h2>
+      <div id="predictions"></div>
+    </section>
+    <section class="dashboard-card" id="cycle-history" style="display:none;">
+      <h2>Your Cycle History</h2>
+      <table id="historyTable">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Cycle Day</th>
+            <th>Symptoms</th>
+            <th>Mood</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div id="noHistoryPrompt"></div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 FloraFlow. Empowering Women Everywhere.</p>
+  </footer>
+  <script src="js/dashboard.js"></script>
+  <script>
+    // Show only the selected section
+    function showSection(sectionId) {
+      document.querySelectorAll('.dashboard-card').forEach(sec => sec.style.display = 'none');
+      document.getElementById(sectionId).style.display = 'block';
+    }
+    // Optionally show the first section by default
+    showSection('cycle-summary');
+  </script>
+</body>
+</html>
